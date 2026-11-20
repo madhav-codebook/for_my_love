@@ -1,0 +1,22 @@
+### VS Code
+# VSCode settings (keep shared configuration)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# Local tooling and source photos (keep originals outside the website)
+.venv/
+__pycache__/
+assets/photos/originals/
+data/memories.json.tmp
+
+# Project brief - spoilers! Never publish.
+prompt.md

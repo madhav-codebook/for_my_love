@@ -1,0 +1,127 @@
+/**
+ * @file style.css
+ * @source https://chatgpt.com/share/69b6d72e-d6f4-8007-8cd1-e9072f68c410
+ * @source https: //share.gemini.google/YOroKuUXgJEG
+ * @date 2026-03-24 21:33:48
+ * @author ChatGPT and Me
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffe6eb;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ff4d79;
+}
+
+/* Screen Management */
+.screen {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.screen.active {
+  display: flex;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Buttons */
+button {
+  background-color: #ff4d79;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Fredoka One', cursive;
+  transition: transform 0.2s, background-color 0.2s;
+  box-shadow: 0 4px 15px rgba(255, 77, 121, 0.3);
+  margin: 10px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #ff3366;
+}
+
+/* 1. Landing Page */
+.envelope-container {
+  font-size: 120px;
+  cursor: pointer;
+  transition: transform 0.3s;
+  animation: bounce 2s infinite;
+}
+
+.envelope-container:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* 2. Letter Page */
+.letter-paper {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 90%;
+  width: 400px;
+  border-top: 5px solid #ff4d79;
+}
+
+.letter-paper h2 {
+  font-family: 'Fredoka One', cursive;
+  margin-bottom: 20px;
+}
+
+.letter-paper p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #555;
+}

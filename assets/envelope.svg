@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 330">
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1">
+      <stop stop-color="#fff5df"/>
+      <stop offset="1" stop-color="#ecdbb7"/>
+    </linearGradient>
+    <linearGradient id="liner" x2="0" y2="1">
+      <stop stop-color="#d5aa9d"/>
+      <stop offset="1" stop-color="#e9c9b8"/>
+    </linearGradient>
+    <radialGradient id="wax" cx=".35" cy=".25">
+      <stop stop-color="#ac4f60"/>
+      <stop offset="1" stop-color="#762738"/>
+    </radialGradient>
+    <filter id="shadow" x="-20%" y="-30%" width="140%" height="170%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#624032" flood-opacity=".22"/>
+    </filter>
+  </defs>
+  <rect id="back" x="8" y="108" width="344" height="213" rx="8" fill="url(#liner)" stroke="#ae8758" filter="url(#shadow)"/>
+  <g id="pocket" stroke="#ba9b69">
+    <path d="M8 111 180 234 352 111v202q0 8-8 8H16q-8 0-8-8Z" fill="#ecdcbd" stroke-linejoin="round"/>
+    <path d="M11 317 164 203q16-12 32 0l153 114q-2 4-7 4H18q-5 0-7-4Z" fill="url(#paper)"/>
+    <path d="M24 313 171 207m18 0 147 106" fill="none" stroke="#f9ecd4"/>
+  </g>
+  <g id="flap" style="transform-box:view-box;transform-origin:180px 108px">
+    <path d="M8 108h344L197 235q-17 14-34 0Z" fill="url(#paper)" stroke="#b89967" stroke-linejoin="round"/>
+    <path d="m22 112 146 119q12 10 24 0l146-119" fill="none" stroke="#fff4dd"/>
+    <g id="seal">
+      <path d="M181 210c8-2 13 3 19 6s5 11 7 17-3 14-8 18-12 4-19 6-14-2-19-7-6-10-6-17 4-12 8-17 11-5 18-6Z" fill="#62303b" opacity=".27" transform="translate(0 3)"/>
+      <path d="M181 210c8-2 13 3 19 6s5 11 7 17-3 14-8 18-12 4-19 6-14-2-19-7-6-10-6-17 4-12 8-17 11-5 18-6Z" fill="url(#wax)" stroke="#782e40"/>
+      <circle cx="181" cy="233" r="17" fill="none" stroke="#c67882" opacity=".65"/>
+      <path d="M181 241c-3-3-10-7-8-12 1-3 6-4 8 0 3-4 7-3 9 0 2 5-6 10-9 12Z" fill="#f3bdba"/>
+    </g>
+  </g>
+</svg>

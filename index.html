@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f8f0e5">
+  <title>For Mrudula | Our Little Scrapbook</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#letter"><span aria-hidden="true">&hearts;</span> Our Little Scrapbook</a>
+    <nav aria-label="Chapters">
+      <a href="#letter" aria-current="location">01. The Letter</a>
+      <a href="#adore">02. Things I Adore</a>
+      <a href="#game">03. A Little Game</a>
+      <a href="#story">04. Our Story</a>
+    </nav>
+    <button class="music" type="button" aria-pressed="false" aria-label="Background music">
+      <span aria-hidden="true">&#9835;</span> <span id="music-label">Play music</span>
+    </button>
+    <span id="music-status" class="sr-only" role="status"></span>
+  </header>
+  <main>
+    <section id="letter" class="chapter hero" aria-labelledby="letter-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true">&mdash;</span> Chapter one &middot; The Letter</p>
+        <h1 id="letter-title" tabindex="-1">A little something<br> <em>for you.</em></h1>
+        <p class="intro">For Mrudula, with love.</p>
+        <p class="note">Some things are better said in a letter.</p>
+      </div>
+      <div class="post" id="post">
+        <div class="post-frame">
+          <div class="post-meta" aria-hidden="true"><span>Personal correspondence</span><span>No. 01</span></div>
+          <div class="envelope-stage">
+            <object id="envelope-art" type="image/svg+xml" data="assets/envelope.svg" aria-hidden="true" tabindex="-1"></object>
+            <div class="card-slot">
+              <article id="invitation" class="invitation" hidden>
+                <h2 tabindex="-1">Hi Boo boo lyaaa!</h2>
+                <p>I wanted to send a little message to remind you how special you are to me!</p>
+                <a href="#adore">Continue <span aria-hidden="true">&rarr;</span></a>
+              </article>
+            </div>
+          </div>
+          <button class="open-letter" type="button" aria-controls="invitation" aria-expanded="false">
+            Open the letter <span aria-hidden="true">&rarr;</span>
+          </button>
+          <p id="envelope-status" class="envelope-status" role="status" hidden></p>
+        </div>
+      </div>
+    </section>
+    <section id="adore" class="chapter adore" aria-labelledby="adore-title" hidden>
+      <p class="eyebrow"><span aria-hidden="true">&mdash;</span> Chapter two</p>
+      <h2 id="adore-title" tabindex="-1">Things I Adore <em>About You</em></h2>
+      <p class="note">Just you. Every one of these has a reason I love it.</p>
+      <p class="hint">Psst &mdash; you can click on the pictures to see them up close.</p>
+      <p id="adore-status" role="status">Opening the pages&hellip;</p>
+      <div id="adore-photos" class="polaroids"></div>
+      <div class="chapter-links">
+        <a class="back-link" href="#letter">&larr; Back to the letter</a>
+        <a class="next-link" href="#game">Continue to a little game <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
+    <section id="game" class="chapter game" aria-labelledby="game-title" hidden>
+      <p class="eyebrow"><span aria-hidden="true">&mdash;</span> Chapter three</p>
+      <h2 id="game-title" tabindex="-1">A Little <em>Game</em></h2>
+      <p class="note">Catch enough hearts&hellip; there is a small surprise waiting at the end.</p>
+      <iframe id="game-frame" title="Catch the Hearts game" data-src="game/game_index.html"></iframe>
+      <div class="chapter-links">
+        <a class="back-link" href="#adore">&larr; Back to things I adore</a>
+        <a class="next-link" href="#story">Our little story <span aria-hidden="true">&rarr;</span></a>
+      </div>
+    </section>
+    <section id="story" class="chapter story" aria-labelledby="story-title" hidden>
+      <p class="eyebrow"><span aria-hidden="true">&mdash;</span> Chapter four</p>
+      <h2 id="story-title" tabindex="-1">Our Little <em>Story</em></h2>
+      <p class="hint">Psst &mdash; you can click on the pictures to see them up close.</p>
+      <p id="story-status" role="status">Opening the scrapbook&hellip;</p>
+      <div id="story-photos" class="polaroids"></div>
+      <div class="chapter-links">
+        <a class="back-link" href="#game">&larr; Back to the game</a>
+      </div>
+    </section>
+  </main>
+  <footer><span aria-hidden="true">&hearts;</span> A scrapbook for two</footer>
+  <dialog id="photo-dialog" aria-label="Memory">
+    <form method="dialog"><button class="close-photo" aria-label="Close photo" autofocus>&times;</button></form>
+    <img id="photo-full" alt="">
+    <p id="photo-caption"></p>
+  </dialog>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
